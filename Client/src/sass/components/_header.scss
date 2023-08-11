@@ -1,0 +1,22 @@
+.header {
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    // background-color: #000;
+
+    &__profile-photo{
+        bottom: -7rem; //This element has an "absolute" position which is inherited from the "align-horizontal-center-1" class
+        width: 15rem;
+        height: 15rem;
+        border-radius: 2rem;
+
+    }
+
+    &__dm-symbol{
+        position: absolute;
+        right: 2rem;
+        top: 1rem;
+    }
+
+}
+

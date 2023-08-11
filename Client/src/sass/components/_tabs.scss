@@ -1,0 +1,43 @@
+.tabs {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    margin: 2rem 0;
+    text-transform: capitalize;
+    font-size: 2rem;
+    text-align: center;
+
+    &__feed{
+        width: 15rem;
+        height: 3.1rem;
+        color: #DBD4D4;
+        @include respond(desktop){
+            width: 35rem;
+        }
+    }
+
+    &__profile{
+        width: 15rem;
+        height: 3.1rem;
+        background-color: #D9D9D9;
+        @include respond(desktop){
+            width: 35rem;
+        }
+    }
+
+    &__explore{
+        width: 14rem;
+        height: 3.1rem;
+        color: #DBD4D4;
+        @include respond(desktop){
+            width: 35rem;
+        }
+    }
+
+    &__left-symbol {
+        color: #DBD4D4;
+    }
+
+    &__right-symbol {
+        color: #DBD4D4;
+    }
+}
