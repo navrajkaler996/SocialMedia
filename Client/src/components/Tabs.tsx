@@ -9,13 +9,15 @@ const styles = {
         pointerEvents: "none"
     }
 }
-const Tabs: React.FC = () => {
+//Functioncal component that returns the tabs.
+//It accepts two propes: activeTabIndex and clickHandler.
+//activeTabIndex tracks the active tab.
+//clickHandler updates the value of activeTabIndex.
+const Tabs: React.FC<{activeTabIndex: Number, clickHandler: Function}> = ({activeTabIndex, clickHandler}) => {
 
     //State to track which three tabs are being displayed on the screen.
     //By default it is 1, 2, 3, which means Feed, Profile, and Explore are being displayed.
     const [activeTabsIndices, setActiveTabIndices] = useState([1,2,3])
-    //State to track which tab is active
-    const [activeTabIndex, setActiveTabIndex] = useState(2)
     
     //State to change the CSS of right arrow dynamically.
     const [rightArrowStyles, setRightArrowStyles] = useState({})
@@ -65,7 +67,7 @@ const Tabs: React.FC = () => {
             <div className="tabs__left-symbol" style={leftArrowStyles} onClick={moveLeft}>&#60;</div>
             {/* The tabs are loaded dynamicaly using the TAB_VALUES array. */}
             {
-                TAB_VALUES.map((tabName, i) => activeTabsIndices.includes(i) && <div className={`tabs__${tabName}`} style={activeTabIndex === i ? {backgroundColor: "#D9D9D9", color: "#000"}: {}}><p>{tabName}</p></div>)   
+                TAB_VALUES.map((tabName, i) => activeTabsIndices.includes(i) && <div className={`tabs__${tabName}`} style={activeTabIndex === i ? {backgroundColor: "#D9D9D9", color: "#000"}: {}} onClick={() => clickHandler(i)}><p>{tabName}</p></div>)   
             }  
             <div className="tabs__right-symbol" style={rightArrowStyles} onClick={moveRight}>&#62;</div>
         </div>

@@ -67,19 +67,19 @@
   text-align: center;
   color: #DBD4D4;
 }
-.tabs__feed {
+.tabs__feed, .tabs__profile, .tabs__explore, .tabs__friends, .tabs__groups {
   width: 100%;
   height: 3.1rem;
 }
-.tabs__profile {
-  width: 100%;
-  height: 3.1rem;
-}
-.tabs__explore {
-  width: 100%;
-  height: 3.1rem;
+.tabs__feed:hover, .tabs__profile:hover, .tabs__explore:hover, .tabs__friends:hover, .tabs__groups:hover {
+  cursor: pointer;
+  background-color: #DBD4D4;
+  color: #fff;
 }
 .tabs__left-symbol, .tabs__right-symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #DBD4D4;
   height: 3.1rem;
 }
