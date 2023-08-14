@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Tabs from '../components/Tabs';
+import Profile from './Profile';
 
 const Home: React.FC = () => {
 
@@ -10,6 +11,16 @@ const Home: React.FC = () => {
     //This function is used in the Tabs component.
     const clickHandler = (i: Number) => {
         setActiveTabIndex(i)
+    }
+
+    //Function to switch tabs
+    const switchTabs = () => {
+        switch (activeTabIndex) {
+            case 2:
+                return <Profile /> 
+            default:
+                return <Profile />
+        }
     }
 
     return <div className='home'>
@@ -23,6 +34,10 @@ const Home: React.FC = () => {
             activeTabIndex and clickHandler are passed as props.
         */}
         <Tabs activeTabIndex={activeTabIndex} clickHandler={clickHandler} />
+
+        {
+            switchTabs()
+        }
     </div>
 
 }

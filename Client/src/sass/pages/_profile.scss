@@ -1,0 +1,48 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+
+  &__post {
+    display: flex;
+    flex-direction: column;
+
+    &-info {
+      display: flex;
+
+      &-dp {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+
+        @include respond(desktop) {
+          width: 5rem;
+          height: 5rem;
+        }
+      }
+
+      &-data {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+
+        &-group {
+          font-size: 1.2rem;
+
+          @include respond(desktop) {
+            font-size: 1.5rem;
+          }
+        }
+
+        &-postedAt {
+          font-size: 1rem;
+          margin-top: -0.5rem;
+          color: #b1b1b1;
+
+          @include respond(desktop) {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+}
