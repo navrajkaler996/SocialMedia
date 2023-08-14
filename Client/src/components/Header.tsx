@@ -1,11 +1,8 @@
 import ProfilePhotoDemo from "../assets/profile_pic_demo.png";
 import DMSymbol from "../assets/DM_symbol.svg";
 
-interface HeaderProps{
 
-}
-
-const Header: React.FC = (props: HeaderProps) => {
+const Header: React.FC = () => {
 
     return <div className="header">
         <img src={DMSymbol} alt="" className="header__dm-symbol" />
