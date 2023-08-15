@@ -66,7 +66,7 @@ const Profile: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="divider" style={{margin: "1rem auto"}}></div></>
+                    <div className="divider" style={{margin: "0rem auto"}}></div></>
         })}   
     </div>
 }
