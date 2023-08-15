@@ -47,6 +47,7 @@
 .profile__post {
   display: flex;
   flex-direction: column;
+  margin: 1.3rem;
 }
 .profile__post-info {
   display: flex;
@@ -84,6 +85,20 @@
   .profile__post-info-data-postedAt {
     font-size: 1.1rem;
   }
+}
+.profile__post-content {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.2px;
+  margin: 1.3rem 0;
+}
+.profile__post-content-title {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.profile__post-content-description {
+  font-size: 1.4rem;
 }
 
 .header {
