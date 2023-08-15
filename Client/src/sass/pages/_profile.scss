@@ -1,30 +1,32 @@
 .profile {
   display: flex;
   flex-direction: column;
-
+  //CSS for post container
   &__post {
     display: flex;
     flex-direction: column;
-
+    margin: 1.3rem;
+    //CSS for post information
     &-info {
       display: flex;
-
+      //CSS for display picture
       &-dp {
         width: 4rem;
         height: 4rem;
         border-radius: 50%;
-
         @include respond(desktop) {
           width: 5rem;
           height: 5rem;
         }
       }
 
+      //CSS for post data - Group name and posted at time
       &-data {
         display: flex;
         flex-direction: column;
         margin-left: 1rem;
 
+        //CSS for group name
         &-group {
           font-size: 1.2rem;
 
@@ -33,6 +35,7 @@
           }
         }
 
+        //CSS for postedAt
         &-postedAt {
           font-size: 1rem;
           margin-top: -0.5rem;
@@ -42,6 +45,25 @@
             font-size: 1.1rem;
           }
         }
+      }
+    }
+
+    //CSS for post content
+    &-content {
+      display: flex;
+      flex-direction: column;
+      letter-spacing: 0.2px;
+      margin: 1.3rem 0;
+
+      //CSS for post title
+      &-title {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        font-weight: 700;
+      }
+
+      &-description {
+        font-size: 1.4rem;
       }
     }
   }
