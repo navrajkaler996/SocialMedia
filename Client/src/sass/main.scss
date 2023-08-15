@@ -16,11 +16,10 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-
 }
 
 html {
-  font-size: 50%; 
+  font-size: 50%;
 
   @include respond(tab-port) {
     font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
@@ -45,7 +44,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: #fff;
-  background-color: #000;;
+  // background-color: #000;;
 
   letter-spacing: 2px;
 }
