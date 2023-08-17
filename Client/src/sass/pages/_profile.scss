@@ -10,8 +10,10 @@
   &__post {
     display: flex;
     flex-direction: column;
-
-    margin: 1.3rem;
+    margin: 3rem 1.3rem;
+    background-color: #2cc0ff;
+    padding: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
     //CSS for post information
     &-info {
@@ -46,7 +48,6 @@
         &-postedAt {
           font-size: 1rem;
           margin-top: -0.5rem;
-          color: #b1b1b1;
 
           @include respond(desktop) {
             font-size: 1.1rem;

@@ -14,14 +14,18 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: #fff;
   border-radius: 50px 50px 0 0;
   color: #000;
 }
 .home__info-container {
   width: fit-content;
-  margin-top: 7rem;
+  margin-top: 0;
   text-align: center;
+}
+@media (min-width: 75em) {
+  .home__info-container {
+    margin-top: 7rem;
+  }
 }
 .home__username {
   font-size: 2rem;
@@ -33,7 +37,6 @@
 }
 .home__status {
   font-size: 1.6rem;
-  color: #b1b1b1;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   font-weight: 900;
@@ -52,7 +55,10 @@
 .profile__post {
   display: flex;
   flex-direction: column;
-  margin: 1.3rem;
+  margin: 3rem 1.3rem;
+  background-color: #2cc0ff;
+  padding: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .profile__post-info {
   display: flex;
@@ -84,7 +90,6 @@
 .profile__post-info-data-postedAt {
   font-size: 1rem;
   margin-top: -0.5rem;
-  color: #b1b1b1;
 }
 @media (min-width: 75em) {
   .profile__post-info-data-postedAt {
@@ -141,10 +146,15 @@
   width: 100%;
 }
 .header__profile-photo {
-  bottom: -7rem;
+  bottom: 0rem;
   width: 15rem;
   height: 15rem;
   border-radius: 2rem;
+}
+@media (min-width: 75em) {
+  .header__profile-photo {
+    bottom: -7rem;
+  }
 }
 .header__dm-symbol {
   position: absolute;
@@ -160,27 +170,32 @@
   text-transform: capitalize;
   font-size: 2rem;
   text-align: center;
-  color: #DBD4D4;
+  color: #dbd4d4;
 }
 .tabs__feed, .tabs__profile, .tabs__explore, .tabs__friends, .tabs__groups {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 3.1rem;
+  color: #000;
+  font-size: 0.6em;
 }
 .tabs__feed:hover, .tabs__profile:hover, .tabs__explore:hover, .tabs__friends:hover, .tabs__groups:hover {
   cursor: pointer;
-  background-color: #DBD4D4;
+  background-color: #dbd4d4;
   color: #fff;
 }
 .tabs__left-symbol, .tabs__right-symbol {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #DBD4D4;
+  color: #dbd4d4;
   height: 3.1rem;
 }
 .tabs__left-symbol:hover, .tabs__right-symbol:hover {
   cursor: pointer;
-  background-color: #DBD4D4;
+  background-color: #dbd4d4;
   color: #000;
 }
 
@@ -228,7 +243,12 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: #fff;
+  height: 100vh;
   letter-spacing: 2px;
+}
+
+#root {
+  background-image: linear-gradient(#a0fff4, #0093ff);
 }
 
 /*# sourceMappingURL=index.css.map */
