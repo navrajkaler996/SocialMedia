@@ -67,7 +67,7 @@ const Tabs: React.FC<{activeTabIndex: Number, clickHandler: Function}> = ({activ
             <div className="tabs__left-symbol" style={leftArrowStyles} onClick={moveLeft}>&#60;</div>
             {/* The tabs are loaded dynamicaly using the TAB_VALUES array. */}
             {
-                TAB_VALUES.map((tabName, i) => activeTabsIndices.includes(i) && <div className={`tabs__${tabName}`} style={activeTabIndex === i ? {backgroundColor: "#D9D9D9", color: "#000"}: {}} onClick={() => clickHandler(i)}><p>{tabName}</p></div>)   
+                TAB_VALUES.map((tabName, i) => activeTabsIndices.includes(i) && <div className={`tabs__${tabName}`} style={activeTabIndex === i ? {backgroundColor: "#D9D9D9", color: "#000", fontSize: "1em"}: {}} onClick={() => clickHandler(i)}><p>{tabName}</p></div>)   
             }  
             <div className="tabs__right-symbol" style={rightArrowStyles} onClick={moveRight}>&#62;</div>
         </div>

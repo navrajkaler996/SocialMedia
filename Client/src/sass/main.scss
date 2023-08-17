@@ -44,7 +44,11 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: #fff;
-  // background-color: #000;;
 
+  height: 100vh;
   letter-spacing: 2px;
+}
+
+#root {
+  background-image: linear-gradient(#a0fff4, #0093ff);
 }

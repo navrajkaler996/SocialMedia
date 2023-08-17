@@ -1,34 +1,44 @@
 //SASS for tabs
 .tabs {
-    display: grid;
-    grid-template-columns: .5fr 3fr 3fr 3fr .5fr;
-    width: 100%;
-    margin: 2rem 0;
-    text-transform: capitalize;
-    font-size: 2rem;
-    text-align: center;
-    color: #DBD4D4;
-    
-    &__feed, &__profile, &__explore, &__friends, &__groups {
-        width: 100%;
-        height: 3.1rem;
-        &:hover{
-            cursor: pointer;
-            background-color:#DBD4D4 ;
-            color: #fff;
-        }
-    }
+  display: grid;
+  grid-template-columns: 0.5fr 3fr 3fr 3fr 0.5fr;
+  width: 100%;
+  margin: 2rem 0;
+  text-transform: capitalize;
+  font-size: 2rem;
+  text-align: center;
+  color: #dbd4d4;
 
-    &__left-symbol, &__right-symbol {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #DBD4D4;
-        height: 3.1rem;
-        &:hover {
-            cursor: pointer;
-            background-color: #DBD4D4;
-            color: #000;
-        }
+  &__feed,
+  &__profile,
+  &__explore,
+  &__friends,
+  &__groups {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 3.1rem;
+    color: #000;
+    font-size: 0.6em;
+    &:hover {
+      cursor: pointer;
+      background-color: #dbd4d4;
+      color: #fff;
     }
+  }
+
+  &__left-symbol,
+  &__right-symbol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #dbd4d4;
+    height: 3.1rem;
+    &:hover {
+      cursor: pointer;
+      background-color: #dbd4d4;
+      color: #000;
+    }
+  }
 }
