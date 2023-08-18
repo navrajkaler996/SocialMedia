@@ -3,17 +3,18 @@
   flex-direction: column;
   width: 100%;
 
-  @include respond(desktop) {
-    width: 80%;
+  @include respond(tab-land) {
+    width: 55%;
+    align-self: flex-start;
   }
   //CSS for post container
   &__post {
     display: flex;
     flex-direction: column;
-    margin: 3rem 1.3rem;
+    margin: 2rem 0;
     background-color: #2cc0ff;
     padding: 1.5rem;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: $box-shadow-1;
 
     //CSS for post information
     &-info {

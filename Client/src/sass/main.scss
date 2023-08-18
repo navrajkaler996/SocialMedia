@@ -1,5 +1,6 @@
 @import "./base/alignments";
 
+@import "./abstract/variables";
 @import "./abstract/mixins";
 
 @import "./pages/home";
@@ -50,5 +51,6 @@ body {
 }
 
 #root {
-  background-image: linear-gradient(#a0fff4, #0093ff);
+  // background-image: linear-gradient(#a0fff4, #0093ff);
+  background-color: #a0fff4;
 }
