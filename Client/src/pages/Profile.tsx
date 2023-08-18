@@ -7,6 +7,7 @@ import ShareButton from "../assets/share.svg";
 import MunnaBhaiya from "../assets/munna-bhaiya.jpg";
 
 import ProfileData from "../data/ProfileData";
+import CreatePost from "../components/CreatePost";
 
 interface postType {
     type: string ,
@@ -33,9 +34,10 @@ const Profile: React.FC = () => {
     }
 
     return <div className="profile">
-
+        <CreatePost />
         {ProfileData.map((post) => {
-            return <> <div className="profile__post">
+            return <>
+             <div className="profile__post">
                         {/* Container for post info such as group name and dp */}
                         <div className="profile__post-info">
                             <img src={Winnipeg} className="profile__post-info-dp"/>
