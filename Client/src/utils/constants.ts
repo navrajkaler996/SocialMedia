@@ -1,1 +1,1 @@
-export const TAB_VALUES: string[] = ["friends", "feed", "profile", "explore", "groups"];
+export const TAB_VALUES: string[] = ["feed", "profile", "explore"];

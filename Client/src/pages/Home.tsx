@@ -5,7 +5,7 @@ import Profile from './Profile';
 const Home: React.FC = () => {
 
     //State to track which tab is active
-    const [activeTabIndex, setActiveTabIndex] = useState<Number>(2)
+    const [activeTabIndex, setActiveTabIndex] = useState<Number>(1)
 
     //Function to update setActiveIndex.
     //This function is used in the Tabs component.
@@ -30,14 +30,26 @@ const Home: React.FC = () => {
             <p className='home__location'>Winnipeg, MB</p>
             <p className="home__status">Study Permit</p>
         </div>
+
         {/* Tabs (three at a time)
             activeTabIndex and clickHandler are passed as props.
         */}
-        <Tabs activeTabIndex={activeTabIndex} clickHandler={clickHandler} />
+        <div className="home__tabs-container">
+            <Tabs activeTabIndex={activeTabIndex} clickHandler={clickHandler} />
+            <div className="home__tabs-container-side">
+                Side1
+            </div>
 
-        {
-            switchTabs()
-        }
+        </div>
+        <div className="home__tabs-content">
+            {
+                switchTabs()
+            }
+            <div className="home__tabs-content-side">
+                Side2
+            </div>
+        </div>
+       
     </div>
 
 }
