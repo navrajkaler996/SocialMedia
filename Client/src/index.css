@@ -53,9 +53,9 @@
 @media (min-width: 56.25em) {
   .home__tabs-container-side {
     display: block;
-    background-color: #2cc0ff;
+    background-color: #fff;
     width: 30%;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   }
 }
 .home__tabs-content {
@@ -69,10 +69,10 @@
 @media (min-width: 56.25em) {
   .home__tabs-content-side {
     display: block;
-    background-color: #2cc0ff;
+    background-color: #fff;
     width: 30%;
     margin: 2rem 0;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   }
 }
 
@@ -91,9 +91,9 @@
   display: flex;
   flex-direction: column;
   margin: 2rem 0;
-  background-color: #2cc0ff;
+  background-color: #fff;
   padding: 1.5rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 .profile__post-info {
   display: flex;
@@ -248,7 +248,7 @@
   width: 100%;
   height: 8rem;
   border: none;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   padding: 0.5rem;
 }
 .create-post__textarea:focus {
@@ -305,7 +305,7 @@ body {
 }
 
 #root {
-  background-color: #a0fff4;
+  background-color: #f6f6f6;
 }
 
 /*# sourceMappingURL=index.css.map */

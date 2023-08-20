@@ -44,7 +44,8 @@
       display: none;
       @include respond(tab-land) {
         display: block;
-        background-color: #2cc0ff;
+        // background-color: #2cc0ff;
+        background-color: #fff;
         width: 30%;
         box-shadow: $box-shadow-1;
       }
@@ -62,7 +63,8 @@
       display: none;
       @include respond(tab-land) {
         display: block;
-        background-color: #2cc0ff;
+        // background-color: #2cc0ff;
+        background-color: #fff;
         width: 30%;
         margin: 2rem 0;
         box-shadow: $box-shadow-1;

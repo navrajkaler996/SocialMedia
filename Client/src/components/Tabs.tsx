@@ -10,7 +10,7 @@ const Tabs: React.FC<{activeTabIndex: Number, clickHandler: Function}> = ({activ
     return <div className="tabs">
             {/* The tabs are loaded dynamicaly using the TAB_VALUES array. */}
             {
-                TAB_VALUES.map((tabName, i) =>  <div className={`tabs__${tabName}`} style={activeTabIndex === i ? {backgroundColor: "#2cc0ff", color: "#000", fontSize: "1em"}: {}} onClick={() => clickHandler(i)}><p>{tabName}</p></div>)   
+                TAB_VALUES.map((tabName, i) =>  <div className={`tabs__${tabName}`} style={activeTabIndex === i ? {backgroundColor: "#fff", color: "#000", fontSize: "1em", boxShadow: "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,rgba(0, 0, 0, 0.08) 0px 0px 0px 1px"}: {}} onClick={() => clickHandler(i)}><p>{tabName}</p></div>)   
             }    
         </div>
 
