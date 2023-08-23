@@ -3,6 +3,8 @@
 @import "./abstract/variables";
 @import "./abstract/mixins";
 
+@import "./base/utilities";
+
 @import "./pages/home";
 @import "./pages/profile";
 
@@ -52,5 +54,6 @@ body {
 }
 
 #root {
-  background-color: #f6f6f6;
+  // background-color: #f6f6f6;
+  background: linear-gradient(rgba(160, 255, 244, 1), rgba(0, 147, 255, 1));
 }
