@@ -8,6 +8,7 @@ import MunnaBhaiya from "../assets/munna-bhaiya.jpg";
 
 import ProfileData from "../data/ProfileData";
 import CreatePost from "../components/CreatePost";
+import { useRef } from "react";
 
 interface postType {
     type: string ,
@@ -32,6 +33,7 @@ const Profile: React.FC = () => {
             return <img src={MunnaBhaiya} alt="post-image-demo" className="profile__post-content-image" />
         }
     }
+
 
     return <div className="profile">
         <CreatePost />

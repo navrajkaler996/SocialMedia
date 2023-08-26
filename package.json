@@ -1,0 +1,24 @@
+{
+  "name": "socialmediaserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navrajkaler996/SocialMedia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/navrajkaler996/SocialMedia/issues"
+  },
+  "homepage": "https://github.com/navrajkaler996/SocialMedia#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
