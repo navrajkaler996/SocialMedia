@@ -1,6 +1,6 @@
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
-
-
+import {Provider} from "react-redux"
+import { store } from './store/store'
 //Pages import
 import Home from './pages/Home'
 import Header from './components/Header'
@@ -14,13 +14,11 @@ const router  = createBrowserRouter(
   )
 )
 function App() {
-
-
   return (
-    <>
+    <Provider store={store}>
       <Header />
       <RouterProvider router={router} />
-    </>
+    </Provider>
   )
 }
 

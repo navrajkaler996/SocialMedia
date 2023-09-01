@@ -73,6 +73,7 @@
 .home__tabs-content {
   display: flex;
   justify-content: space-around;
+  width: 100%;
   margin-top: 2rem;
 }
 .home__tabs-content-side {
