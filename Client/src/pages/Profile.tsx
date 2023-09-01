@@ -6,23 +6,25 @@ import CommentButton from "../assets/comment.svg";
 import ShareButton from "../assets/share.svg";
 import MunnaBhaiya from "../assets/munna-bhaiya.jpg";
 
-import ProfileData from "../data/ProfileData";
 import CreatePost from "../components/CreatePost";
-import { useRef } from "react";
 
-interface postType {
-    type: string ,
-    text: string,
-    group: string,
-    postedAt: string,
-    title: string
-}
+import { useGetPostsByUserIdQuery } from "../services/postServiceSlice";
+import { useEffect, useState } from "react";
+import { Post } from "../model/post.model";
 
 const Profile: React.FC = () => {
 
+    const { data, error, isError, isFetching, isSuccess } = useGetPostsByUserIdQuery({userId: 1, offset: 4});
+
+    const [posts, setPosts] = useState<Post[]>([])
+
+    useEffect(() => {
+        if(data) setPosts(data)
+    }, [data])
+
     //Function filter the type of post.
     //This function returns the JSX of the filter post.
-    const getPostContent = (post: postType) => {
+    const getPostContent = (post: Post) => {
 
         if(post.type === "text") {
             return <p className="profile__post-content-description">    
@@ -37,14 +39,14 @@ const Profile: React.FC = () => {
 
     return <div className="profile">
         <CreatePost />
-        {ProfileData.map((post) => {
+        { isSuccess && data?.map((post) => {
             return <>
              <div className="profile__post">
                         {/* Container for post info such as group name and dp */}
                         <div className="profile__post-info">
                             <img src={Winnipeg} className="profile__post-info-dp"/>
                             <div className="profile__post-info-data">
-                                <span className="profile__post-info-data-group">{post.group}</span>
+                                <span className="profile__post-info-data-group">{post.band}</span>
                                 <span className="profile__post-info-data-postedAt">1 days ago</span>
                             </div>
                         </div>
