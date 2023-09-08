@@ -353,6 +353,7 @@ body {
 
 #root {
   background: linear-gradient(rgb(160, 255, 244), rgb(0, 147, 255));
+  height: 100vh;
 }
 
 /*# sourceMappingURL=index.css.map */

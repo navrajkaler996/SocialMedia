@@ -1,5 +1,6 @@
 import pkg from "pg";
 
+
 const { Pool } = pkg;
 
 const pool = new Pool({
@@ -9,5 +10,6 @@ const pool = new Pool({
   password: "Bitchplease1996*",
   port: "5432",
 });
+
 
 export default pool;

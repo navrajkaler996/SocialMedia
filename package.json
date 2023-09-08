@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node server/index",
-    "start:dev": "nodemon server/index"
+    "start:dev": "nodemon server/index",
+    "setup:tables": "node server/config/setupTables.js"
   },
   "repository": {
     "type": "git",
